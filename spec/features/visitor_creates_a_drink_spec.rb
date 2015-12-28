@@ -19,9 +19,7 @@ feature 'visitor creates drink', %Q{
 
     fill_in 'Title', with: drink_title
     fill_in 'Description', with: 'Likely the best martini you will ever have. A Thanksgiving must.'
-    check 'Featured'
     select category.name, from: 'Category'
-    choose 'Medium'
 
     click_button 'Add Drink'
 

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :drinks, only: [:new, :create, :index]
   root 'homes#index'
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
